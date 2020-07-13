@@ -1,0 +1,14 @@
+<div class="grid grid-cols-1">
+    {{ #list }}
+    <div class="bg-gray-200 rounded-lg p-10 mx-3 mt-3 flex">
+        <img class="h-20 w-20 rounded-full mx-auto flex-none" src="https://via.placeholder.com/100">
+        <div class="text-left pl-10 flex-auto">
+            <h2 class="text-lg">{{ name }}</h2>
+            <div class="text-purple-500">
+                <a href="{{ url }}">{{ url }}</a>
+            </div>
+            <div class="text-gray-600">{{ description }}</div>
+        </div>
+    </div>
+    {{ /list }}
+</div>

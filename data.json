@@ -1,0 +1,44 @@
+[
+    {
+        "group": "poychang",
+        "name": "Poy Chang's blog",
+        "url": "https://blog.poychang.net",
+        "description": "Host on GitHub Page"
+    },
+    {
+        "group": "poychang",
+        "name": "Poy Chang 的技術交流中心",
+        "url": "https://www.facebook.com/poychang.tech",
+        "description": "Poy Chang's Facebook Pages"
+    },
+    {
+        "group": "poychang",
+        "name": "Poy Chang's LinkedIn",
+        "url": "https://www.linkedin.com/in/poychang",
+        "description": "Poy Chang's LinkedIn"
+    },
+    {
+        "group": "poychang",
+        "name": "GitHub Dark Theme",
+        "url": "https://poychang.github.io/github-dark-theme/",
+        "description": "Change appearance of all GitHub pages to a dark theme"
+    },
+    {
+        "group": "study4",
+        "name": "Study4",
+        "url": "http://study4.tw",
+        "description": "We are Study4"
+    },
+    {
+        "group": "study4",
+        "name": "Study4 Facebook 粉絲專頁",
+        "url": "https://www.facebook.com/Study4.tw",
+        "description": "We are Study4"
+    },
+    {
+        "group": "study4",
+        "name": "Study4 Facebook 社團",
+        "url": "https://www.facebook.com/groups/study4tw",
+        "description": "We are Study4"
+    }
+]

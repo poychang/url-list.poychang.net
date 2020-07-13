@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        (function () {
+            let getList = fetch('data.json')
+                .then(response => response.json())
+                .then(data => data.filter(item => item.group === location.pathname.split('/').pop()))
+                // .then(data => data.filter((d) => d.group === 'poychang'))
+                .catch(error => console.error(error));
+            let getHtml = fetch('template.html')
+                .then(response => response.text())
+                .catch(error => console.error(error));
+
+            Promise.all([getList, getHtml]).then(([list, html]) => {
+                document.getElementById('app').insertAdjacentHTML('beforeEnd', Mustache.render(html, { list: list }));
+            });
+        })();
+    </script>
+</body>
+
+</html>
